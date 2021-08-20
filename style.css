@@ -1,0 +1,141 @@
+body
+{
+	background-color: rgb(225, 243, 248);
+	padding: 20px;
+	color: darkslategray;
+	font-family: sans-serif;
+}
+
+header, .navLinks
+{
+	display: flex;
+}
+
+.navLogo img
+{
+	width: 200px;
+}
+
+.navLogo p
+{
+	font-size: 12px;
+}
+
+.navLink
+{
+	padding: 5px;
+	text-decoration: none;
+	color: darkslategray;
+}
+
+.navLinks
+{
+	list-style: none;
+}
+
+.intro
+{
+	display: flex;
+	padding: 10px;
+}
+
+.introImg, .introText
+{
+	padding: 10px;
+}
+
+.introImg img
+{
+	width: 700px;
+	box-shadow: black 0px 0px 30px;
+	
+}
+
+.introText
+{
+	font-size: large;
+}
+
+.download
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.ctaButton
+{
+	color: black;
+	background-color: white;
+	border: black 2px solid;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.download img
+{
+	width: 100px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	body
+	{
+		background-color: rgb(0 6 26);
+		color: white;
+	}
+
+	.navLink
+	{
+		color: white;
+	}
+
+	.ctaButton
+	{
+		color: white;
+		background-color: black;
+		border: white 2px solid;
+	}
+}
+
+/* Small screens */
+@media (max-width: 984px)
+{
+	header
+	{
+		flex-direction: column;
+	}
+	
+	.intro
+	{
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media (max-width: 834px)
+{
+	.navLinks
+	{
+		flex-direction: column;
+	}
+
+	.introImg img
+	{
+		width: 400px;
+	}
+}
+
+@media (max-width: 500px)
+{
+	.introImg img
+	{
+		width: 200px;
+	}
+
+	.download
+	{
+		flex-direction: column;
+
+	}
+}
